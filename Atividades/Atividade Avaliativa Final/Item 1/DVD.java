@@ -19,9 +19,9 @@ public class DVD extends Midia {
 public void inserirDados(Scanner scanner) {
     super.inserirDados(scanner);
     try {
-        System.out.print("Insira o número de faixas: ");
+        System.out.print("Digite o número de faixas: ");
         while (!scanner.hasNextInt()) {
-            System.out.println("Erro. Por favor, insira um número.");
+            System.out.println("Apenas números são aceitos!");
             scanner.next();
         }
         this.nFaixas = scanner.nextInt();
@@ -33,6 +33,6 @@ public void inserirDados(Scanner scanner) {
     @Override
     public void printDados() {
         super.printDados();
-        System.out.println("Número de faixas: " + nFaixas);
+        System.out.println("Quantidade de Faixas: " + nFaixas);
     }
 }

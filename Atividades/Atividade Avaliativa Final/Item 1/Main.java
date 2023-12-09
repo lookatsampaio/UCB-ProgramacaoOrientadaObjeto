@@ -8,19 +8,19 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         try {
-            System.out.println("Inserir dados para CD:");
+            System.out.println("Digite as informações do CD:");
             CD cd = new CD(1, 0.0, "", 0);
             cd.inserirDados(scanner);
             cadastroMidias.add(cd);
 
             
-            System.out.println("\nInserir dados para DVD:");
+            System.out.println("\nDigite as informações do DVD:");
             DVD dvd = new DVD(2, 0.0, "", 0);
             dvd.inserirDados(scanner);
             cadastroMidias.add(dvd);
 
             
-            System.out.println("\nInserir dados para Mídia:");
+            System.out.println("\nDigite as informações do Mídia:");
             Midia midia = new Midia(3, 0.0, "");
             midia.inserirDados(scanner);
             cadastroMidias.add(midia);
@@ -29,7 +29,7 @@ public class Main {
         }
 
     
-        System.out.println("\nDetalhes do cadastro:");
+        System.out.println("\nInfos do Cadastro:");
         for (Midia m : cadastroMidias) {
             m.printDados();
             System.out.println();

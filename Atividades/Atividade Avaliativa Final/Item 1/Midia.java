@@ -21,19 +21,19 @@ public class Midia {
 
     public void inserirDados(Scanner scanner) {
         try {
-            System.out.print("Insira o código: ");
+            System.out.print("Digite o código: ");
             while (!scanner.hasNextInt()) {
-                System.out.println("Erro. Por favor, insira um número.");
+                System.out.println("Apenas números são aceitos!");
                 scanner.next(); 
             }
             this.codigo = scanner.nextInt();
             scanner.nextLine(); 
-            System.out.print("Insira o nome: ");
+            System.out.print("Digite o nome: ");
             this.nome = scanner.nextLine();
 
-            System.out.print("Insira o preço: ");
+            System.out.print("Digite o preço: ");
             while (!scanner.hasNextDouble()) {
-                System.out.println("Erro. Por favor, insira um número.");
+                System.out.println("Apenas números são aceitos!");
                 scanner.next(); 
             }
             this.preco = scanner.nextDouble();

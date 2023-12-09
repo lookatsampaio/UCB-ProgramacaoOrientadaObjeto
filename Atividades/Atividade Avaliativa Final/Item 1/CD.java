@@ -17,9 +17,9 @@ public class CD extends Midia {
     public void inserirDados(Scanner scanner) {
         super.inserirDados(scanner);
         try {
-            System.out.print("Insira o número de músicas: ");
+            System.out.print("Digite o número de músicas: ");
             while (!scanner.hasNextInt()) {
-                System.out.println("Entrada inválida. Por favor, insira um número.");
+                System.out.println("Apenas números são aceitos!");
                 scanner.next(); 
             }
             this.nMusicas = scanner.nextInt();
@@ -31,6 +31,6 @@ public class CD extends Midia {
     @Override
     public void printDados() {
         super.printDados();
-        System.out.println("Número de Músicas: " + nMusicas);
+        System.out.println("Quantidade de Músicas: " + nMusicas);
     }
 }
