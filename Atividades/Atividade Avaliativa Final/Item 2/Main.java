@@ -13,7 +13,7 @@ public class Main {
             } else if (escolha == 'B' || escolha == 'b') {
                 veiculo = Moto.cadastrarMoto();
             } else {
-                System.out.println("Opcao invalida");
+                System.out.println("Inválido");
                 return;
             }
 

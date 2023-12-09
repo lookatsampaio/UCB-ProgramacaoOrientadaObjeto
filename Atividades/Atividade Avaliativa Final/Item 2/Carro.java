@@ -19,7 +19,7 @@ public class Carro extends Veiculo {
     @Override
     public void printDados() {
         super.printDados();
-        System.out.println("Quilometragem: " + km);
+        System.out.println("Km: " + km);
     }
 
     public static Carro cadastrarCarro() {
@@ -32,7 +32,7 @@ public class Carro extends Veiculo {
             System.out.print("Preço: ");
             double preco = scanner.nextDouble();
 
-            System.out.print("Quilometragem: ");
+            System.out.print("Km: ");
             double km = scanner.nextDouble();
 
             return new Carro(modelo, preco, km);
